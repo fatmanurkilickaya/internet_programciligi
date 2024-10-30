@@ -1,0 +1,37 @@
+var kullanicilar = [
+    {email: "fnurkilickaya", sifre:"12345"},
+    {email:"semih", sifre:"123"}
+]
+
+var tivitler =[
+    {email:"semih", tivit:"Bugün hava çok güzel"},
+    {email:"semih", tivit:"i love programming"},
+    {email:"fnurkilickaya", tivit:"herkesi bırakacağım"}
+
+]
+var email = prompt("email?")
+var sifre = prompt("sifre?")
+
+function kullaniciVarmi(email,sifre){
+    for(i=0; i<kullanicilar.length; i++){
+       if( kullanicilar[i].email = email && kullanicilar[i].sifre == sifre)
+        return true;
+    }
+}
+
+function Giris(){
+    // if(((email== kullanicilar[0].email) 
+    //     && (sifre == kullanicilar[0].sifre))
+    // || ((email == kullanicilar[1].email) 
+    //     && (sifre == kullanicilar[1].sifre)))
+    for(i=0; i<kullanicilar.length; i++){
+        if( kullanicilar[i].email == email && kullanicilar[i].sifre == sifre){
+    console.log(tivitler);
+        }else{
+            console.log("Kullanıcı adı veya şifre yanlış girildi")
+        }
+    }
+}
+
+
+Giris();
