@@ -1,0 +1,29 @@
+var kullanicilar = [
+{email:"fatmanurkilickaya@gmail.com",sifre:"12345"},
+{email:"demet@gmail.com", sifre:"123"},
+{email:"abdullah@gmail.com", sifre:"456"},
+{email:"fatmanurkilickaya@gmail.com",sifre:"12345"},
+{email:"demet@gmail.com", sifre:"123"},
+{email:"abdullah@gmail.com", sifre:"456"}
+]
+
+var tivitler = [
+    {email:"demet@gmail.com", tivit:"Bugün hava soğuktu"},
+    {email:"abdullah@gmail.com", tivit: "javascript zormuş"}
+]
+var email = prompt("Bir email giriniz")
+var sifre = prompt("Bir sifre giriniz")
+
+function giris(){
+    for(var i=0; i<= kullanicilar.length; i++){
+        if(kullanicilar[i].email == email && 
+            kullanicilar[i].sifre ==sifre){
+                console.log(tivitler);
+    
+        }else{
+            console.log("mail adresi veya şifreyi yanlış giriniz ");
+        }
+    }
+    
+}
+giris(email,sifre)
